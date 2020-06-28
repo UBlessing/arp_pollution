@@ -44,7 +44,7 @@ int main(void) {
 	arp_hdr.dst_mac_addr[3] = 0xD0;
 	arp_hdr.dst_mac_addr[4] = 0x76;
 	arp_hdr.dst_mac_addr[5] = 0xCB;
-	arp_hdr.dst_addr = inet_addr("10.0.2.24");
+	arp_hdr.dst_addr = inet_addr("172.30.1.24");
 	
 	if(sendto(sock, &arp_hdr, sizeof(arp_hdr), 0, (struct sockaddr*)&dst_in, sizeof(dst_in)) < 0) {
 		perror("sendto() error");
