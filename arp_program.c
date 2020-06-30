@@ -29,6 +29,7 @@ int main(void) {
 	arp_hdr.hard_addr_len = 6;
 	arp_hdr.proto_addr_len = 4;
 	arp_hdr.operation_code = 2;
+	
 	//input src mac addr
 	arp_hdr.src_mac_addr[0] = 0x08;
 	arp_hdr.src_mac_addr[1] = 0x00;
@@ -37,6 +38,7 @@ int main(void) {
 	arp_hdr.src_mac_addr[4] = 0xc1;
 	arp_hdr.src_mac_addr[5] = 0x62;
 	arp_hdr.src_addr = inet_addr("172.30.1.254");
+	
 	//input dst mac addr
 	arp_hdr.dst_mac_addr[0] = 0x8C;
 	arp_hdr.dst_mac_addr[1] = 0x89;
