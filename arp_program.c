@@ -52,7 +52,7 @@ int main(void) {
 	}
 
 	while(1) {
-		printf("disconnect!\n");
+		printf("arp pollution!\n");
 		sendto(sock, &arp_hdr, sizeof(arp_hdr), 0, (struct sockaddr*)&dst_in, sizeof(dst_in));
 		sleep(5);
 	}
