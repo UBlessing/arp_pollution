@@ -25,7 +25,7 @@ int main(void) {
 	struct sockaddr_in dst_in;
 	dst_in.sin_family = AF_INET;
 	dst_in.sin_port = 0;
-	dst_in.sin_addr.s_addr = inet_addr("10.0.2.5");
+	dst_in.sin_addr.s_addr = inet_addr("10.0.2.15");
 
 
 	ARP_PACKET attack_packet;
